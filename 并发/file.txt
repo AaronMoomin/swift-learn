@@ -1,0 +1,291 @@
+/**
+ * 快速测评报告分数计算与话术生成工具
+ * 根据题目错误数量自动判定分数，并生成对应的评估话术
+ * 判定规则：
+ * 1. 优先判定题目1-10
+ *    - 错误3-5题 → "3-3.5分"
+ *    - 错误6个以上 → "接近零基础"
+ *    - 错误0-2题 → 继续判断题目11-20
+ * 2. 题目11-20判断（仅错误0-2题时）
+ *    - 错误0-2题 → "5.5分"
+ *    - 错误6个以上 → "4分"
+ *    - 错误3-5题 → 继续判断题目21-30
+ * 3. 题目21-30判断（仅错误3-5题时）
+ *    - 错误0-2题 → "5.5分"
+ *    - 错误3-5题 → "4.5-5分"
+ *    - 错误6个以上 → "4-4.5分"
+ */
+const EvaluationTool = {
+    /**
+     * 各分数对应的综合评估话术
+     */
+    scoreEvaluationTexts: {
+        "5.5分": "语法与词汇基础扎实，整体正确率较高，语言表达较准确，具备良好的语言能力；建议优化语法细节、强化同义替换与学术词汇，通过真题限时训练提升口语流利度与写作逻辑，冲刺雅思高分。",
+        "4.5-5分": "基础语法与词汇掌握中等，进阶语法偏弱，可完成基础表达但错误较多、表达单一；建议查漏补缺基础语法、重点突破从句与时态，熟练掌握雅思核心2000词，以基础真题训练搭建写作与口语框架，为拿下目标分打好基础。",
+        "4-4.5分": "基础语法与词汇薄弱，进阶语法掌握不足，简单句易出错、词汇量有限，表达受限；建议优先夯实时态、单复数等基础语法，主攻1500基础词与话题词，从简单题型入手提升正确率，设定合适的阶段性目标，循序渐进。",
+        "4分": "语法与词汇基础薄弱，正确率偏低，句子结构混乱、词汇匮乏，语言准确度不足；建议系统重学基础语法并坚持短句仿写，从入门词汇开始每日背诵听写，以基础专项训练提升准确度后再接触真题。",
+        "3-3.5分": "语法与词汇基础极差，难以独立完成完整句子，词汇量严重不足、语感薄弱；建议从词性、基本句型、一般时态起步，聚焦1000个核心基础词，使用入门教材打牢基础，先掌握简单句表达、建立语言感知。",
+        "接近零基础": "缺乏系统语法与词汇积累，基本无法进行英语读写与交流，需从零构建语言体系；建议从音标、基础单词、简单主谓宾句型开始学习，每日积累少量生活词汇，以启蒙入门课程为主，培养语感并循序渐进提升。"
+    },
+
+    /**
+     * 各部分（基础语法、进阶语法、词汇）不同正确率对应的分析话术
+     */
+    accuracyAnalysisTexts: {
+        "基础语法": {
+            "80%及以上": "基础语法知识掌握全面且熟练，答题准确率高，对常用句式、基础规则理解透彻，具备良好的语言运用基础，学习潜力充足。",
+            "50%-70%": "基础语法掌握尚可，核心知识点基本掌握，但存在部分细节疏漏，如时态混淆、句型误用等，针对性查漏补缺后，基础可快速夯实。",
+            "40%及以下": "基础语法存在较多知识漏洞，对基本语法规则理解模糊，需从零基础系统梳理，配合基础练习逐步夯实。"
+        },
+        "进阶语法": {
+            "80%及以上": "进阶语法理解透彻，能精准分析长难句结构，对特殊语法规则掌握熟练，语法应用能力强，为雅思阅读、写作提分奠定优势。",
+            "50%-70%": "进阶语法理解存在短板，部分知识点混淆、应用不灵活，需加强专项练习，提升长难句分析与运用能力。",
+            "40%及以下": "进阶语法基础薄弱，对复杂句式、语法难点理解不足，无法灵活应用，需从简单长难句入手，拆解结构、强化理解，搭配专项训练，逐步提升语法分析能力。"
+        },
+        "词汇": {
+            "80%及以上": "词汇基础扎实，不仅识记准确，更能灵活理解语境含义，词汇积累质量高，具备雅思备考的良好词汇素养。",
+            "50%-70%": "词汇掌握程度中等，能应对基础题目，生僻词、同义替换积累不足，需加强语境记忆与搭配积累，提升词汇运用精准度。",
+            "40%及以下": "词汇储备严重不足，基础词汇识记不牢、词义混淆，需制定每日背诵计划，从雅思核心基础词开始积累，结合例句强化记忆。"
+        }
+    },
+
+    /**
+     * 根据错误题目数量计算正确率
+     * @param {number} errorCount - 错误题目数量
+     * @param {number} totalQuestions - 总题目数量
+     * @returns {string} 正确率等级（"80%及以上"、"50%-70%"、"40%及以下"）
+     */
+    calculateAccuracyLevel: function(errorCount, totalQuestions) {
+        // 输入验证
+        if (typeof errorCount !== 'number' || typeof totalQuestions !== 'number') {
+            throw new Error("错误：错误题目数和总题目数必须为数字类型");
+        }
+        if (errorCount < 0 || totalQuestions <= 0 || errorCount > totalQuestions) {
+            throw new Error("错误：错误题目数不能为负数，且不能超过总题目数；总题目数必须大于0");
+        }
+
+        const correctCount = totalQuestions - errorCount;
+        const accuracy = (correctCount / totalQuestions) * 100;
+
+        if (accuracy >= 80) {
+            return "80%及以上";
+        } else if (accuracy >= 50 && accuracy < 80) {
+            return "50%-70%";
+        } else {
+            return "40%及以下";
+        }
+    },
+
+    /**
+     * 根据各题目区块的错误数量判定最终分数
+     * @param {number} errors1_10 - 题目1-10的错误数量
+     * @param {number} errors11_20 - 题目11-20的错误数量
+     * @param {number} errors21_30 - 题目21-30的错误数量
+     * @returns {string} 最终判定的分数
+     */
+    determineScore: function(errors1_10, errors11_20, errors21_30) {
+        // 输入验证
+        const validateErrorCount = (count, section) => {
+            if (typeof count !== 'number' || count < 0 || count > 10) {
+                throw new Error(`错误：${section}的错误数量必须为0-10之间的数字`);
+            }
+        };
+
+        validateErrorCount(errors1_10, "题目1-10");
+        validateErrorCount(errors11_20, "题目11-20");
+        validateErrorCount(errors21_30, "题目21-30");
+
+        // 第一步：判断题目1-10
+        if (errors1_10 >= 3 && errors1_10 <= 5) {
+            return "3-3.5分";
+        } else if (errors1_10 >= 6) {
+            return "接近零基础";
+        } else {
+            // 错误0-2题，继续判断题目11-20
+            if (errors11_20 >= 0 && errors11_20 <= 2) {
+                return "5.5分";
+            } else if (errors11_20 >= 6) {
+                return "4分";
+            } else {
+                // 错误3-5题，继续判断题目21-30
+                if (errors21_30 >= 0 && errors21_30 <= 2) {
+                    return "5.5分";
+                } else if (errors21_30 >= 3 && errors21_30 <= 5) {
+                    return "4.5-5分";
+                } else {
+                    // 错误6个以上
+                    return "4-4.5分";
+                }
+            }
+        }
+    },
+
+    /**
+     * 生成完整的测评报告
+     * @param {number} errors1_10 - 题目1-10的错误数量
+     * @param {number} errors11_20 - 题目11-20的错误数量
+     * @param {number} errors21_30 - 题目21-30的错误数量
+     * @param {Object} sectionConfig - 各部分题目配置（基础语法、进阶语法、词汇的题目分布）
+     * @returns {Object} 完整的测评报告
+     */
+    generateReport: function(errors1_10, errors11_20, errors21_30, sectionConfig = {}) {
+        try {
+            // 1. 判定最终分数
+            const finalScore = this.determineScore(errors1_10, errors11_20, errors21_30);
+            
+            // 2. 获取综合评估话术
+            const comprehensiveEvaluation = this.scoreEvaluationTexts[finalScore] || 
+                "暂无对应评估话术，请检查分数判定是否正确";
+
+            // 3. 处理各部分题目配置（默认配置：题目1-10=基础语法，11-20=进阶语法，21-30=词汇）
+            const config = {
+                基础语法: { start: 1, end: 10, total: 10 },
+                进阶语法: { start: 11, end: 20, total: 10 },
+                词汇: { start: 21, end: 30, total: 10 },
+                ...sectionConfig
+            };
+
+            // 4. 计算各部分的错误数量和正确率分析
+            const sectionAnalysis = {};
+            let totalErrors = errors1_10 + errors11_20 + errors21_30;
+
+            // 处理基础语法部分
+            sectionAnalysis.基础语法 = this._getSectionAnalysis(
+                errors1_10, 
+                config.基础语法.total, 
+                "基础语法"
+            );
+
+            // 处理进阶语法部分
+            sectionAnalysis.进阶语法 = this._getSectionAnalysis(
+                errors11_20, 
+                config.进阶语法.total, 
+                "进阶语法"
+            );
+
+            // 处理词汇部分
+            sectionAnalysis.词汇 = this._getSectionAnalysis(
+                errors21_30, 
+                config.词汇.total, 
+                "词汇"
+            );
+
+            // 5. 生成完整报告
+            return {
+                测评结果: {
+                    题目1_10错误数: errors1_10,
+                    题目11_20错误数: errors11_20,
+                    题目21_30错误数: errors21_30,
+                    总错误数: totalErrors,
+                    预估分数: finalScore
+                },
+                综合评估: comprehensiveEvaluation,
+                各部分详细分析: sectionAnalysis,
+                生成时间: new Date().toLocaleString()
+            };
+        } catch (error) {
+            console.error("生成测评报告失败:", error.message);
+            return {
+                状态: "失败",
+                错误信息: error.message,
+                生成时间: new Date().toLocaleString()
+            };
+        }
+    },
+
+    /**
+     * 内部方法：获取单个部分的分析结果
+     * @param {number} errorCount - 该部分错误数量
+     * @param {number} totalQuestions - 该部分总题目数
+     * @param {string} sectionName - 部分名称
+     * @returns {Object} 该部分的分析结果
+     */
+    _getSectionAnalysis: function(errorCount, totalQuestions, sectionName) {
+        const accuracyLevel = this.calculateAccuracyLevel(errorCount, totalQuestions);
+        const correctCount = totalQuestions - errorCount;
+        const accuracy = ((correctCount / totalQuestions) * 100).toFixed(1) + "%";
+
+        return {
+            错误题目数: errorCount,
+            正确题目数: correctCount,
+            总题目数: totalQuestions,
+            正确率: accuracy,
+            正确率等级: accuracyLevel,
+            分析话术: this.accuracyAnalysisTexts[sectionName][accuracyLevel] || 
+                "暂无对应分析话术，请检查配置是否正确"
+        };
+    },
+
+    /**
+     * 测试方法：验证不同错误数量组合的判定结果
+     */
+    runTests: function() {
+        console.log("开始执行测试用例...\n");
+
+        // 测试用例数组
+        const testCases = [
+            { name: "测试1: 全部错误0题", e1: 0, e2: 0, e3: 0, expected: "5.5分" },
+            { name: "测试2: 1-10错2题，11-20错2题", e1: 2, e2: 2, e3: 10, expected: "5.5分" },
+            { name: "测试3: 1-10错2题，11-20错3题，21-30错2题", e1: 2, e2: 3, e3: 2, expected: "5.5分" },
+            { name: "测试4: 1-10错2题，11-20错3题，21-30错3题", e1: 2, e2: 3, e3: 3, expected: "4.5-5分" },
+            { name: "测试5: 1-10错2题，11-20错3题，21-30错6题", e1: 2, e2: 3, e3: 6, expected: "4-4.5分" },
+            { name: "测试6: 1-10错2题，11-20错6题", e1: 2, e2: 6, e3: 0, expected: "4分" },
+            { name: "测试7: 1-10错3题", e1: 3, e2: 0, e3: 0, expected: "3-3.5分" },
+            { name: "测试8: 1-10错5题", e1: 5, e2: 10, e3: 10, expected: "3-3.5分" },
+            { name: "测试9: 1-10错6题", e1: 6, e2: 0, e3: 0, expected: "接近零基础" },
+            { name: "测试10: 1-10错10题", e1: 10, e2: 0, e3: 0, expected: "接近零基础" }
+        ];
+
+        // 执行测试
+        testCases.forEach((test, index) => {
+            try {
+                const result = this.determineScore(test.e1, test.e2, test.e3);
+                const status = result === test.expected ? "✅ 成功" : "❌ 失败";
+                console.log(`${status} ${test.name}`);
+                console.log(`   输入: 题目1-10错${test.e1}题, 题目11-20错${test.e2}题, 题目21-30错${test.e3}题`);
+                console.log(`   预期: ${test.expected}, 实际: ${result}`);
+                console.log();
+            } catch (error) {
+                console.log(`❌ 错误 ${test.name}: ${error.message}`);
+                console.log();
+            }
+        });
+
+        console.log("测试执行完成！");
+    }
+};
+
+// 示例用法
+console.log("=== 快速测评报告工具 ===");
+console.log("\n示例1: 生成完整测评报告");
+try {
+    // 示例：题目1-10错2题，题目11-20错3题，题目21-30错4题
+    const report = EvaluationTool.generateReport(2, 3, 4);
+    console.log("\n1. 测评结果概览:");
+    console.log(`   预估分数: ${report.测评结果.预估分数}`);
+    console.log(`   总错误数: ${report.测评结果.总错误数}/30题`);
+    
+    console.log("\n2. 综合评估:");
+    console.log(`   ${report.综合评估}`);
+    
+    console.log("\n3. 各部分详细分析:");
+    for (const [section, analysis] of Object.entries(report.各部分详细分析)) {
+        console.log(`\n   ${section}:`);
+        console.log(`     - 正确率: ${analysis.正确率} (${analysis.正确率等级})`);
+        console.log(`     - 答题情况: 正确${analysis.正确题目数}题/错误${analysis.错误题目数}题`);
+        console.log(`     - 分析: ${analysis.分析话术}`);
+    }
+    
+    console.log(`\n报告生成时间: ${report.生成时间}`);
+} catch (error) {
+    console.error("生成报告失败:", error.message);
+}
+
+// 示例2: 运行测试用例（如需测试请取消注释）
+// console.log("\n\n示例2: 运行测试用例");
+// EvaluationTool.runTests();
+
+// 导出工具（用于模块化使用）
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = EvaluationTool;
+}
