@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="NoctuleWorkspaceSettings">
+    <fileSettings>
+      <settings filePath="$PROJECT_DIR$/内存管理/ARC基础.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/内存管理/ARC基础.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/内存管理/值类型.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/内存管理/值类型.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/内存管理/对象生命周期.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/内存管理/对象生命周期.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/内存管理/弱引用.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/内存管理/弱引用.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/函数式编程/概述.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/函数式编程/概述.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/函数式编程/高阶函数.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/函数式编程/高阶函数.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/Alphabetizer/Alphabetizer.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/Alphabetizer/Alphabetizer.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/Birthdays/Birthdays.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/Birthdays/Birthdays.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/DiceRoller/DiceRoller.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/DiceRoller/DiceRoller.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/FriendsFavoriteMovies/FriendsFavoriteMovies.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/FriendsFavoriteMovies/FriendsFavoriteMovies.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/GratefulMoments/GratefulMoments.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/GratefulMoments/GratefulMoments.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/Landmarks/Landmarks.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/Landmarks/Landmarks.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/MyApp/MyApp.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/MyApp/MyApp.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/Pick-a-Pal/Pick-a-Pal.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/Pick-a-Pal/Pick-a-Pal.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/ScoreKeeper/ScoreKeeper.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/ScoreKeeper/ScoreKeeper.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/swiftUI-learn/WhyNotTry/WhyNotTry.xcodeproj/project.pbxproj">
+        <projectSettings projectType="noctule.xcode" useDefaultSettings="false">
+          <filePath>$PROJECT_DIR$/基础/swiftUI-learn/WhyNotTry/WhyNotTry.xcodeproj/project.pbxproj</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/下标.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/下标.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/不透明类型和封装协议类型.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/不透明类型和封装协议类型.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/协议.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/协议.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/可选链式调用.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/可选链式调用.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/宏.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/宏.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/属性.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/属性.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/嵌套类型.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/嵌套类型.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/并发.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/并发.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/扩展.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/扩展.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/方法.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/方法.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/构造过程.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/构造过程.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/枚举.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/枚举.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/泛型.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/泛型.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/类型转换.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/类型转换.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/结构体和类.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/结构体和类.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/继承.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/继承.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/自动引用计数.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/自动引用计数.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/访问控制.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/访问控制.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/Resources/错误处理.playground/Resources/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/错误处理.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/基础/闭包.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/基础/闭包.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/Actor模型.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/Actor模型.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/任务.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/任务.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/任务优先级.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/任务优先级.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/任务取消.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/任务取消.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/任务组.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/任务组.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/并发基础.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/并发基础.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/异步函数.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/异步函数.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/异步属性.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/异步属性.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/异步序列.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/异步序列.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/并发/异步迭代.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/并发/异步迭代.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/模式匹配/值绑定.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/模式匹配/值绑定.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/模式匹配/标识符模式.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/模式匹配/标识符模式.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/模式匹配/模式匹配基础.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/模式匹配/模式匹配基础.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/模式匹配/通配符模式.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/模式匹配/通配符模式.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/设计模式/单例模式.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/设计模式/单例模式.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/设计模式/工厂模式.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/设计模式/工厂模式.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/设计模式/观察者模式.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/设计模式/观察者模式.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/访问级别/基础.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/访问级别/基础.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/高级主题/动态成员查找.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/高级主题/动态成员查找.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/高级主题/反射与镜像.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/高级主题/反射与镜像.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+      <settings filePath="$PROJECT_DIR$/高级主题/属性包装器.playground/playground.xcworkspace/contents.xcworkspacedata">
+        <projectSettings projectType="noctule.xcode">
+          <filePath>$PROJECT_DIR$/高级主题/属性包装器.playground/playground.xcworkspace/contents.xcworkspacedata</filePath>
+        </projectSettings>
+      </settings>
+    </fileSettings>
+  </component>
+</project>
